@@ -1,0 +1,183 @@
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css"/> 
+	<meta name=”viewport” content=” width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0″/>
+</head>
+<body>
+
+    <h1>
+        <a href="index.html">Purple Vikings Home</a>
+    </h1>
+	<h2>
+		<button onclick="getlocation()">Location</button> 
+		<cite https://www.javatpoint.com/html-geolocation>
+		<div id="location"></div>  
+		<script>  
+		var x= document.getElementById("location");  
+		function getlocation() {  
+			if(navigator.geolocation){  
+				navigator.geolocation.getCurrentPosition(showPosition)  
+			}  
+			else  
+			{  
+				alert("Your browser does not support Geolocation!")  
+			} }  
+       
+		function showPosition(position){  
+			var x = "Your current location is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " +    position.coords.longitude + ")";  
+                document.getElementById("location").innerHTML = x;  
+		}
+		</script>  
+	</h2>
+
+    
+    <div class="topNav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1">
+                    <a href="ryley.html">Ryley Bernier</a>
+                </div>
+                <div class="col-lg-1">
+                    <a href="ethan.html">Ethan Berry</a>
+                </div>
+                <div class="col-lg-1">
+                    <a href="jarod.html">Jarod Davis</a>
+                </div>
+                <div class="col-lg-1">
+                    <a href="kyle.html">Kyle Louis Diaz</a>
+                </div>
+                <div class="col-lg-1">
+                    <a href="adam.html">Adam Lamb</a>
+                </div>
+                <div class="col-lg-1">
+                    <a href="james.html">James Lin</a>
+                </div>
+                <div class="col-lg-1">
+                    
+                </div>
+                <div class="col-lg-1">
+                    
+                </div>
+                <div class="col-lg-1">
+                    
+                </div>
+                <div class="col-lg-1">
+                    
+                </div>
+                <div class="col-lg-1">
+                    
+                </div>
+                <div class="col-lg-1">
+                    <a href="feedback.html">Feedback</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <div class="containter">
+        <div class="row">
+            <div id="body1" name="body1" class="col-md-8">
+                <h3>
+                    About Ryley
+                </h3>
+                <p>
+                    Some details about me.
+				</p>
+				<p1>
+					I'm Ryley Bernier, I am an IT student at SAIT, my hobbies include gaming, sledding, quading, dirt biking, and binge watching TV. I also enjoy learning about current hardware/ tech news from a content creator called Linus Tech Tips. The games that i am playing currently are Overwatch 2, Escape From Tarkov, and Halo infinite, which all are FPS games. I also enjoy playing a couple games of chess every now and then as it is very strategical and requires you to think. I learn most of my chess strategies from a Grand Master chess player named Hikaru Nakamura, who uploads videos, and live streams his games of chess,
+				</p>
+				<p>
+					Here you can see an opening in chess called the bongcloud, all it means is that you moved you king in the first few moves which statstically put you at a disadvantage, making the game harder for yourself.
+				</p>
+				<p>
+				<img src="media/bongcloud.png">
+				</p>
+				<p>
+					Here you can see the map from the game Escape From Tarkov, each labelled location is a place you can choose to spawn and start at, some arent released yet, and some are harder than others, my favorite is Factory as there are usually lots of players around that area.
+				</p>
+				<p>
+				<img src="media/Tarkov.png">
+				</p>
+            </div>
+    
+            <div id="sidebar1" name="sidebar1" class="col">
+                <h3>Background</h3>
+                <p>
+                    I am originally born in Calgary, but at the age of four i moved to Dauphin Manitoba with my family, i grew up next to a lake, and spent lots of time outdoors, although i liked playing video games i had Dial-up internet for the longest time, so online gaming wasnt a very pleasent experience. While i was in Manitoba i wanted to move back to Calgary, so when i graduated high school i applied to SAIT to be able to move back to the city and have decent internet.
+                </p>
+				<p>
+					<img src="media/Dauphin.png">
+				</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Purple Vikings Members and Info</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Member Name</th>
+                    <th>Email Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ethan Berry</td>
+                    <td>ethan.berry@edu.sait.ca</td>
+                </tr>
+                <tr>
+                    <td>Ryley Bernier</td>
+                    <td>ryley.bernier@edu.sait.ca</td>
+                </tr>
+                <tr>
+                    <td>Kyle Louis Diaz</td>
+                    <td>kylelouis.diaz@edu.sait.ca</td>
+                </tr>
+                <tr>
+                    <td>James Lin</td>
+                    <td>yueh-sheng.lin@edu.sait.ca</td>
+                </tr>
+                <tr>
+                    <td>Jarod Davis</td>
+                    <td>jarod.davis@edu.sait.ca</td>
+                </tr>
+                <tr>
+                    <td>Adam Lamb</td>
+                    <td>adam.lamb@edu.sait.ca</td>
+                </tr>
+            </tbody>
+        </table>
+	    
+	    
+        <link rel="stylesheet" href="form.css">
+        <button class="open-button" onclick="openForm()"><div class="img-size"> <img src="Logo.png"> </div></button>
+
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+        
+            <label for="nameInput"><b>Fill in your full name:</b></label><br>
+            <input type="text" placeholder="Type here..." name="fullName" required>
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+          </form>
+        </div>
+
+        <script>
+            function openForm() {
+              document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+              document.getElementById("myForm").style.display = "none";
+            }
+        </script>
+	    
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testing Form Layout</title>
+    </head>
+    <body>
+        <h4>Feedback Form:</h4>
+        <p>
+            Thank you for visiting our site. If you have any feedback or questions, please fill out the form below. All feedback is appreciated!
+        </p>
+        <form action="https://webdevbasics.net/scripts/demo.php" method="post">
+            <label for="fullName">
+                Your name:
+            </label>
+            <input type="text" name="fullName" id="fullName">
+            <br />
+        
+            <label for="eMail">
+                Your email address:
+            </label>
+            <input type="email" name="eMail" id="eMail">
+            <br />
+        
+            <label for="dateAccessed">
+                Date the website was acccessed:
+            </label>
+            <input type="date" name="dateAccessed" id="dateAccessed">
+            <br />
+        
+            <label for="feedback">
+                Feedback/Questions:
+            </label>
+            <input type="text" name="feedback" id="feedback">
+            <br />
+        
+            <label for="rating">
+                Overall, how would you rate our site on a scale from 1 to 10?
+            </label>
+            <input type="number" name="rating" id="rating">
+            <br />
+        
+            <input type="submit" value="Submit Form">
+            <input type="reset">
+        </form>
+    </body>
+</html>
